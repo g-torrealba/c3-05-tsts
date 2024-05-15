@@ -9,10 +9,11 @@ class Cl_mTienda {
   constructor() {
     this.data = [];
   }
-  
+
   agregarArticulo(art) {
     this.data.push(new Cl_mArticulo(art));
   }
+  
   menorPrecio() {
     let menor=Infinity
     this.data.forEach((a) => {
