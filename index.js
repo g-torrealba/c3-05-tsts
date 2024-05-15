@@ -1,3 +1,4 @@
+// Versión 22.07
 class Cl_mArticulo {
   constructor({ code, precio }) {
     this.code = code;
