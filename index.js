@@ -1,4 +1,4 @@
-// Versión 22.07
+// Versión 22.19
 class Cl_mArticulo {
   constructor({ code, precio }) {
     this.code = code;
@@ -14,11 +14,11 @@ class Cl_mTienda {
     this.data.push(new Cl_mArticulo(art));
   }
   menorPrecio() {
-    let menor=Infinity
+    let menor = Infinity;
     this.data.forEach((a) => {
       if (a.precio < menor) menor = a.precio;
     });
-    return menor
+    return menor;
   }
   codesMenorPrecio() {
     let menor = this.menorPrecio(),
@@ -44,4 +44,4 @@ t.agregarArticulo({ code: "A", precio: 4 }),
 
 let r1 = t.menorPrecio(),
   r2 = t.codesMenorPrecio(),
-  r3 = t.conMenorPrecio()
+  r3 = t.conMenorPrecio();
