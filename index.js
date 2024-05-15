@@ -4,7 +4,6 @@ class Cl_mArticulo {
     this.precio = precio;
   }
 }
-
 class Cl_mTienda {
   constructor() {
     this.data = [];
@@ -13,7 +12,6 @@ class Cl_mTienda {
   agregarArticulo(art) {
     this.data.push(new Cl_mArticulo(art));
   }
-  
   menorPrecio() {
     let menor=Infinity
     this.data.forEach((a) => {
