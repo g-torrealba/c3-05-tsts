@@ -9,6 +9,7 @@ class Cl_mTienda {
   constructor() {
     this.data = [];
   }
+  
   agregarArticulo(art) {
     this.data.push(new Cl_mArticulo(art));
   }
